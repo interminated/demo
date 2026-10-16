@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исток — Студия Пилатеса</title>
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Фоновые декоративные линии -->
+    <div class="bg-lines">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+    </div>
+
+    <!-- Логотип в левом верхнем углу -->
+    <header class="logo-header hidden-el">
+        <img src="logo.png" alt="Исток — Студия Пилатеса" class="logo-img">
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <div class="content-wrapper">
+
+            <!-- Левая часть: текст -->
+            <div class="text-block">
+                <p class="tagline hidden-el">Студия пилатеса</p>
+                <h1 class="title hidden-el">Исток</h1>
+                <div class="ornament hidden-el">
+                    <span class="orn-line"></span>
+                    <span class="orn-diamond">◆</span>
+                    <span class="orn-line"></span>
+                </div>
+                <p class="description hidden-el">
+                    Пилатес «Исток» — это место, где вы можете обрести силу
+                    и&nbsp;душевное спокойствие, а&nbsp;также заново узнать своё тело
+                    и&nbsp;его правильное функционирование.
+                </p>
+
+                <!-- Преимущества -->
+                <div class="features hidden-el">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-spa"></i>
+                        <span>Гармония</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>Сила</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <span>Здоровье</span>
+                    </div>
+                </div>
+
+                <!-- Кнопка -->
+                <a href="#" class="cta-btn hidden-el">
+                    <span>Записаться</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Правая часть: Галерея фотографий -->
+            <div class="gallery-block hidden-el">
+                <div class="gallery-container">
+                    <!-- Главное фото -->
+                    <div class="main-photo">
+                        <div class="photo-frame">
+                            <img src="photos\photo1.jpg" alt="Студия Исток" class="gallery-img active" data-index="0">
+                            <img src="photos\photo2.jpg" alt="Занятие пилатесом" class="gallery-img" data-index="1">
+                            <img src="photos\photo3.jpg" alt="Интерьер студии" class="gallery-img" data-index="2">
+                            <img src="photos\photo4.jpg" alt="Тренер и клиент" class="gallery-img" data-index="3">
+                        </div>
+                        <div class="photo-overlay"></div>
+                    </div>
+
+                    <!-- Миниатюры -->
+                    <div class="thumbnails">
+                        <button class="thumb active" data-index="0">
+                            <img src="photos\photo1.jpg" alt="Миниатюра 1">
+                        </button>
+                        <button class="thumb" data-index="1">
+                            <img src="photos\photo2.jpg" alt="Миниатюра 2">
+                        </button>
+                        <button class="thumb" data-index="2">
+                            <img src="photos\photo3.jpg" alt="Миниатюра 3">
+                        </button>
+                        <button class="thumb" data-index="3">
+                            <img src="photos\photo4.jpg" alt="Миниатюра 4">
+                        </button>
+                    </div>
+
+                    <!-- Индикаторы -->
+                    <div class="indicators">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                    </div>
+
+                    <!-- Декоративные элементы -->
+                    <div class="gallery-decor decor-1"></div>
+                    <div class="gallery-decor decor-2"></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Нижний колонтитул -->
+    <footer class="site-footer hidden-el">
+        <div class="footer-contacts">
+            <a href="tel:+70000000000"><i class="fa-solid fa-phone"></i> +7 (000) 000-00-00</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
+        </div>
+        <p class="copyright">© 2026 Исток. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
